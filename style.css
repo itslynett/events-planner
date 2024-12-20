@@ -1,0 +1,442 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+a {
+    text-decoration: none;
+    color: #800080; /* Plum */
+}
+a:hover {
+    color: #6a004b; /* Darker Plum */
+}
+nav {
+    background: #800080; /* Plum */
+    color: white;
+    padding: 1rem 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #f2d1c9; /* Nude */
+}
+
+/* Home Section */
+header {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+header button {
+    background: #f2d1c9; /* Nude */
+    border: none;
+    padding: 0.75rem 2rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+header button:hover {
+    background: #e0953b;
+}
+
+/* Services Section */
+#services {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #f8f9fa;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.service {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.service i {
+    font-size: 2.5rem;
+    color: #f2d1c9; /* Nude */
+    margin-bottom: 1rem;
+}
+.service h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2, h3 {
+    color: #4B4B4B;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Package Section Styles */
+#packages {
+    background-color: #f8f1e1; /* Nude background */
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #4B4B4B;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6B6B6B;
+    margin-bottom: 30px;
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.package-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.package-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #2E8B57; /* Palm Green */
+    margin-bottom: 15px;
+}
+
+/* General styling for the catalog container */
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background-color: #f7f1f1; /* Nude background color */
+}
+
+/* Styling for each catalog item */
+.catalog-item {
+    background-color: #fff; /* White background for each catalog item */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px); /* Adds a slight hover effect */
+}
+
+/* Styling for the catalog title */
+.catalog-title {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    color: #6c4f60; /* Plum color for the title */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d1b7c1; /* Subtle line under the title */
+    padding-bottom: 10px;
+}
+
+/* Styling for the list items in the catalog */
+.catalog-item ul {
+    list-style: none;
+    padding-left: 0;
+    color: #6f4f64; /* Slightly muted plum for text */
+}
+
+.catalog-item ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Pricing styling */
+.catalog-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6c4f60; /* Plum color for pricing */
+    margin-bottom: 10px;
+}
+
+/* Styling for the Standard and Premium price labels */
+.catalog-item p strong {
+    font-size: 1.2rem;
+    color: #6c4f60; /* Plum for strong text */
+}
+
+/* Adding a subtle background color to highlight the premium section */
+.catalog-item p:last-of-type {
+    background-color: #f2e2e6; /* Very light plum for premium sections */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling the container when viewing the catalog on smaller screens */
+@media (max-width: 768px) {
+    .catalog-container {
+        grid-template-columns: 1fr; /* Stack the items on smaller screens */
+    }
+}
+
+/* Booking Form */
+.vendor-form, .review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.vendor-form label, .review-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #2c3e50;
+}
+
+.vendor-form input, .review-form input, .vendor-form select, .review-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.vendor-form button, .review-form button {
+    width: 100%;
+    background: #800080; /* Plum */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vendor-form button:hover, .review-form button:hover {
+    background: #6a004b; /* Darker Plum */
+}
+
+/* contact section */
+#contact {
+    background: linear-gradient(135deg, #f2d1c9, #c2c2d6); /* Nude */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #444;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.method {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.method h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.method p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.method a {
+    color: #800080; /* Plum */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.method a:hover {
+    color: #6a004b; /* Darker Plum */
+}
+
+.method i {
+    font-size: 2rem;
+    color: #800080; /* Plum */
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-buttons button {
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-call {
+    background: #4caf50;
+}
+
+.btn-call:hover {
+    background: #3d8f40;
+    transform: scale(1.05);
+}
+
+.btn-whatsapp {
+    background: #25d366;
+}
+
+.btn-whatsapp:hover {
+    background: #1da553;
+    transform: scale(1.05);
+}
+
+.btn-sms {
+    background: #ff9800;
+}
+
+.btn-sms:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .method {
+        max-width: 90%;
+    }
+
+    .contact-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .packages-container {
+        grid-template-columns: 1fr;
+    }
+
+    .vendor-form button, .review-form button {
+        font-size: 0.9rem;
+    }
+}
